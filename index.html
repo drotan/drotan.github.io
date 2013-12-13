@@ -39,7 +39,26 @@
 			    	}
 			    ]
 				};
-				jwplayer("player").setup( player_config );	
+				jwplayer("player").setup( player_config );
+				
+				
+				var player_config = {
+					height			: 360,
+			    width				: 640,
+			    autostart		: false,
+			    // primary			: "flash", //Setting primary flash since many ads are Flash based
+			    playlist		: [
+			    	{
+			    		sources: [
+			    			{
+			    				file: "http://knowlera.vo.llnwd.net/o18/test_optimized_main3.1_handbrake_12-11-13.mp4"
+			    			}
+			    			
+			    		]
+			    	}
+			    ]
+				};
+				jwplayer("player").setup( player_config );
 		
 
 	});
@@ -67,6 +86,10 @@
       <div id="player"></div>
 		<hr>
 		
+		
+		test_optimized_main3.1_handbrake_12-11-13.mp4
+      <div id="player2"></div>
+		<hr>
     </div>
 
     <!-- FOOTER  -->
