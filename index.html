@@ -22,6 +22,27 @@
 
 	$(document).ready(function(){
 			
+			
+				var player_config = {
+					height			: 360,
+			    width				: 640,
+			    autostart		: false,
+			    // primary			: "flash", //Setting primary flash since many ads are Flash based
+			    playlist		: [
+			    	{
+			    		sources: [
+			    			{
+			    				file: "ftp://knowlera.upload.llnw.net//test_telestream-changes_12-18-13.mp4"
+			    			}
+			    			
+			    		]
+			    	}
+			    ]
+				};
+				jwplayer("player").setup( player_config );
+				
+				
+				
 		
 				var player_config = {
 					height			: 360,
@@ -32,14 +53,14 @@
 			    	{
 			    		sources: [
 			    			{
-			    				file: "http://knowlera.vo.llnwd.net/o18/Test_MainConceptH264.m4v"
+			    				file: "ftp://knowlera.upload.llnw.net//Test_MainConceptH264.m4v"
 			    			}
 			    			
 			    		]
 			    	}
 			    ]
 				};
-				jwplayer("player").setup( player_config );
+				jwplayer("player2").setup( player_config );
 				
 				
 				var player_config = {
@@ -58,7 +79,7 @@
 			    	}
 			    ]
 				};
-				jwplayer("player2").setup( player_config );
+				jwplayer("player3").setup( player_config );
 		
 
 	});
@@ -82,13 +103,18 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       
-      Test_MainConceptH264.m4v
+      New mp4 settings from Telestream 12-18-13
       <div id="player"></div>
+		<hr>
+      
+      
+      Test_MainConceptH264.m4v
+      <div id="player2"></div>
 		<hr>
 		
 		
-		test_optimized_main3.1_handbrake_12-11-13.mp4  david did this
-      <div id="player2"></div>
+		test_optimized_main3.1_handbrake_12-11-13.mp4 
+      <div id="player3"></div>
 		<hr>
     </div>
 
