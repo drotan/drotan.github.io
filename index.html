@@ -69,6 +69,26 @@
 				jwplayer("player2").setup( player_config );
 				
 				
+				
+				
+					var player_config = {
+					height			: 360,
+			    width				: 640,
+			    autostart		: false,
+			    // primary			: "flash", //Setting primary flash since many ads are Flash based
+			    playlist		: [
+			    	{
+			    		sources: [
+			    			{
+			    				file: "ftp://knowlera.upload.llnw.net//test_optimized_main3.1_handbrake_12-11-13.mp4"
+			    			}
+			    			
+			    		]
+			    	}
+			    ]
+				};
+				jwplayer("player3").setup( player_config );
+				
 
 	});
 	</script>
@@ -98,6 +118,11 @@
       
       2nd Test - New mp4 settings from Telestream 12-19-13
       <div id="player2"></div>
+		<hr>
+		
+		
+	Test Video from HANDBRAKE 12-11-13
+      <div id="player3"></div>
 		<hr>
 		
    </div>
