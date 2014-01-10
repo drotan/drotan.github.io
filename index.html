@@ -26,7 +26,51 @@
 			
 			
 			
+			var player_config = {
+					height			: 360,
+			    width				: 640,
+			    autostart		: false,
+			    // primary			: "flash", //Setting primary flash since many ads are Flash based
+			    playlist		: [
+			    	{
+			    		sources: [
+			    			{
+			    				file: "http://knowlera.vo.llnwd.net/o18/test_standard MKS production_640x360_12-11-13_transmux.mp4"
+			    			}
+			    			
+			    		]
+			    	}
+			    ]
+				};
+				jwplayer("playerA").setup( player_config );
+				
+				
 			
+			
+			var player_config = {
+					height			: 360,
+			    width				: 640,
+			    autostart		: false,
+			    // primary			: "flash", //Setting primary flash since many ads are Flash based
+			    playlist		: [
+			    	{
+			    		sources: [
+			    			{
+			    				file: "http://knowlera.vo.llnwd.net/o18/redorbit_test_new_specs_transmux.mp4"
+			    			}
+			    			
+			    		]
+			    	}
+			    ]
+				};
+				jwplayer("playerB").setup( player_config );
+				
+				
+				
+				
+				
+				
+		
 			var player_config = {
 					height			: 360,
 			    width				: 640,
@@ -157,6 +201,19 @@
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
+      
+      
+        Test Video #1 made with old transcoder - TRANSMUXED - 1-10-2014
+      <div id="playerA"></div>
+		<hr>
+		
+		
+		
+	Test Video #2 made with old transcoder - TRANSMUXED - 1-10-2014
+      <div id="playerB"></div>
+		<hr>
+      
+      
       
       TEST VIDEO MADE WITH OLDER TRANSCODER 13.16.  12-11-2013
       <div id="player"></div>
