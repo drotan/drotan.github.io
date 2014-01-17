@@ -25,7 +25,28 @@
 			
 			
 			
-			
+			var player_config = {
+					height			: 360,
+			    width				: 640,
+			    autostart		: false,
+			    // primary			: "flash", //Setting primary flash since many ads are Flash based
+			    playlist		: [
+			    	{
+			    		sources: [
+			    			{
+			    				file: "http://knowlera.vo.llnwd.net/o18/test_standard MKS production_640x360_12-11-13_transmuxed.mp4"
+			    			}
+			    			
+			    		]
+			    	}
+			    ]
+				};
+				jwplayer("player1A").setup( player_config );
+				
+				
+				
+				
+				
 			var player_config = {
 					height			: 360,
 			    width				: 640,
@@ -203,7 +224,13 @@
     <div id="main_content_wrap" class="outer">
       
       
-        Test Video #1 made with old transcoder - TRANSMUXED - 1-10-2014
+        Test Video TRANSMUXED BY KNOWLERA WITH NEW MULTISCREEN OPTION - 1-17-2014
+      <div id="player1A"></div>
+		<hr>
+		
+		
+		
+	Test Video #1 made with old transcoder - TRANSMUXED - 1-10-2014
       <div id="playerA"></div>
 		<hr>
 		
